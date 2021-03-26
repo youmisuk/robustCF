@@ -150,9 +150,8 @@ twolevel.binary <- function(ids=1, Smpl.size = "150.30", s.val=0.3, o.val=0.3, m
   pop <- data.frame(id, X1, X2, X3, W1=W1[id], W2=W2[id])
   
   # ::::: 4) generate selection probabilities and potential outcome ::::::::
-  E <- rnorm(sum(N), 0, 1)   # error terms for pot.  
   pop$lps <- -0.6 + 0.3* pop$X1 + 0.3* pop$X2 + 0.3*pop$X3 + 0.3* pop$W1 + s.val* (pop$W2) + 0.4* pop$X2*pop$W1 + 0.4 * pop$X1^2 +  0.4 * pop$X1*I(pop$X3 < 0.3)   # ps logit
-  pop$lpsY0 <- -0.6  + 0.3*(pop$X1 + pop$X2 + pop$X3 + pop$W1 + pop$X2*pop$W1 + pop$X1^2 + pop$X1*I( pop$X3  < 0.3)) + o.val*(pop$W2)  + E
+  pop$lpsY0 <- -0.6  + 0.3*(pop$X1 + pop$X2 + pop$X3 + pop$W1 + pop$X2*pop$W1 + pop$X1^2 + pop$X1*I( pop$X3  < 0.3)) + o.val*(pop$W2)
   pop$lpsY1 <- pop$lpsY0 + 0.5 + 0.3*pop$X3 + 0.3*pop$W1 + m.val*(pop$W2)
   
   pop$ps <- 1 / (1 + exp(-pop$lps))   # ps
@@ -165,7 +164,6 @@ twolevel.binary <- function(ids=1, Smpl.size = "150.30", s.val=0.3, o.val=0.3, m
   
   pop
 } 
-
 
 # :: Design 5: Uniformly Distributed $U_j$ and Exponential Errors in the Outcome Model ####
 
