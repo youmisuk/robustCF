@@ -30,7 +30,7 @@ twolevel.experror
 
 * `ECLSK_Algebra_complete.csv`
 
-  This is our complete data. The original ECLSK 1998-99 dataset is available at https://nces.ed.gov/ecls/dataproducts.asp. 
+  This is our complete data. The original ECLSK 1998-99 dataset is available at https://nces.ed.gov/ecls/dataproducts.asp. For more information, see [Tourangeau et al. (2009)](https://nces.ed.gov/pubs2009/2009003.pdf).
 
 * `ECLSK_Algebra_robustCF.R` 
  

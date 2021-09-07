@@ -3,6 +3,10 @@
 # : The ECLS-K data analysis 
 # by Youmi Suk & Hyunseung Kang
 
+# This is our complete data. 
+# The original ECLSK 1998-99 dataset is available at https://nces.ed.gov/ecls/dataproducts.asp. 
+# For more information, see Tourangeau et al. (2009) from https://nces.ed.gov/pubs2009/2009003.pdf.
+
 # The variables in the dataset include:
 
 # :: ID
