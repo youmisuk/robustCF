@@ -10,7 +10,7 @@ Here, we provide `R` codes to reproduce our simulation study and replicate our d
 
 ## Simulation Study
 
-* `DGP_clusterOVB.R`  
+* `DataGeneratingModels.R`  
 
    This `R` file includes data generating codes for multilevel observational data with cluster-level unmeasured confounding.
  
@@ -21,7 +21,7 @@ twolevel.binary
 twolevel.experror 
 ```
 
-* `Simulation_robustCF.R`
+* `SimulationCodes.R`
  
    This `R` file includes simulation codes with our proposed modifcations for Causal Forests. In addition to different DGPs, one can change other simulation parameters: `smpl.size`, `o.val`, and `m.val`.  For more details on simulation condtions, see our paper, https://psyarxiv.com/36w72/.
 
@@ -30,8 +30,8 @@ twolevel.experror
 
 * `ECLSK_Algebra_complete.csv`
 
-  This is our complete data. The original ECLSK 1998-99 dataset is available at https://nces.ed.gov/ecls/dataproducts.asp. For more information, see [Tourangeau et al. (2009)](https://nces.ed.gov/pubs2009/2009003.pdf).
+  This is our complete data. The original ECLSK 1998-99 dataset is available at https://nces.ed.gov/ecls/dataproducts.asp. For more information on ECLS-K data, see [Tourangeau et al. (2009)](https://nces.ed.gov/pubs2009/2009003.pdf).
 
-* `ECLSK_Algebra_robustCF.R` 
+* `DataAnalysisCodes.R` 
  
    This `R` file can be used to replicate our data analysis.
